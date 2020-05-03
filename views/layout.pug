@@ -26,14 +26,16 @@ html
             a.nav-link(href='/book') book
           li.nav-item
             a.nav-link(href='/transaction') transaction
+          li.nav-item
+            a.nav-link(href='/shop') Shop
       i.fas.fa-shopping-cart
       span= sum
       if(user)
-        img.avatar(alt='Card image cap', src=`${user.avatar}`)
-        a(href='/user/edit')= user.username
-
+        a(href='/user/edit')
+         img.avatar(alt='Card image cap', src=`${user.avatar}`)
+      else
+        a(href="/login") login
     block cdn-bootstrap
-  
     block navbar   
     block content
   

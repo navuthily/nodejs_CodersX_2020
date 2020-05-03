@@ -22,12 +22,20 @@
   ],
   "users": [
     {
+      "id": "OMUvhf_LO",
+      "username": "Ly Na",
+      "email": "vuthilyna21@gmail.com",
+      "password": "$2b$10$6LSQ.tw3VfPwGS2pj2L17OvTtPgqXFaGJHs7XMVjnQBkq0TN0DVkS",
+      "wrongLoginCount": 0,
+      "avatar": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588506727/nwm2z5pldaujekpgwad8.jpg"
+    },
+    {
       "id": "cPPtNDhMU",
-      "username": "Kyoto22",
+      "name": "Ly Na",
       "email": "vuthilyna304@gmail.com",
       "password": "$2b$10$1OzzwAvDUmPifJPZmjabV.yy8x3RMBuC.oxFGYrG9XybTCnUQv0vO",
       "wrongLoginCount": 0,
-      "avatar": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588078291/e79ix6ioh7yxleqkydkl.png"
+      "avatar": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588506727/nwm2z5pldaujekpgwad8.jpg"
     }
   ],
   "admins": [
@@ -36,13 +44,23 @@
       "name": "Ly Na",
       "email": "vuthilyna304@gmail.com",
       "password": "$2b$10$1OzzwAvDUmPifJPZmjabV.yy8x3RMBuC.oxFGYrG9XybTCnUQv0vO",
-      "wrongLoginCount": 0
+      "wrongLoginCount": 0,
+      "avatar": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588506727/nwm2z5pldaujekpgwad8.jpg"
     }
   ],
-  "transactions": [],
-  "sessions": [
+  "transactions": [
     {
-      "id": "QxcOH-dLR_"
+      "id": "ly1Zu7_RG",
+      "userId": "OMUvhf_LO",
+      "bookId": "pTNg7Rd42",
+      "isComplete": false
+    },
+    {
+      "id": "2PnpTxLA9",
+      "userId": "OMUvhf_LO",
+      "bookId": "qB0IDpHoI",
+      "isComplete": false
     }
-  ]
+  ],
+  "sessions": []
 }

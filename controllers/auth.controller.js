@@ -42,7 +42,7 @@ const postRegister = function (req, res) {
           email: req.body.email,
           password: hashPassword,
           wrongLoginCount: countWrongPassword,
-          avatar: 'default.jpg'
+          avatar: "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588506066/mexn8zmwp5la8wyhjaz5.jpg"
         }).write();
       return res.redirect("/login");
     });

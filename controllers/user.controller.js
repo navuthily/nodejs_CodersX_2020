@@ -88,16 +88,11 @@ const deleteUser = function (req, res) {
   return res.redirect("/user");
 };
 const editUser = async function (req, res) {
-  // console.log(req.file);
-  // console.log(req.file.path);
-  // console.log(req.body.username);
 const file = req.file.path;
 const path = await cloudinary.uploader
   .upload(file)
   .then(result => result.url)
   .catch(error => console.log("erro:::>", error));
-
-
   const {
     originalname,
   } = req.file;
@@ -124,7 +119,6 @@ const getEdit = function (req, res) {
     user
   })
 };
-
 module.exports = {
   getUser,
   getSearch,

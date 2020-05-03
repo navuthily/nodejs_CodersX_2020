@@ -46,7 +46,7 @@ app.get('/notification', (req,res)=>{
 app.use('/',countCookieRequest,routerAuth)
 app.use('/user',userAuth,countCookieRequest, routerUser)
 app.use('/book',countCookieRequest,routerBook)
-app.use('/transaction',userAuth,countCookieRequest, routerTransaction)
+app.use('/transaction',countCookieRequest,userAuth, routerTransaction)
 app.use('/home',countCookieRequest,routerAuth,routerHome)
 app.listen(port, () => {
   console.log("Server listening on port " + port);
