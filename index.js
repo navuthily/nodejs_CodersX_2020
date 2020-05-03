@@ -20,11 +20,9 @@ app.use(cookieParser(process.env.SESSION_SECRET))
 var sessionMiddleware =require('./middleware/session.middleware')
 app.use(sessionMiddleware);
 app.use('/cart',routerCart)
-
 app.set("view engine", "pug");
 app.set("views", "./views/");
 const methodOverride = require("method-override");
-
 app.use(
   methodOverride(req => {
     if (req.body && typeof req.body === "object" && "_method" in req.body) {
