@@ -10,7 +10,7 @@ const getHome= function(req, res,next) {
 
   try{
     var user=db.get('users').find({id:req.signedCookies.userId}).value();
-  user.b();
+  
   res.render("home",{user:user});
   }
   catch(error){
