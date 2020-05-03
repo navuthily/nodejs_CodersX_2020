@@ -15,7 +15,7 @@ const {userAuth,userIsNotAuth}=require('./middleware/auth.middleware')
 app.use(express.static("public"));
 app.use(express.static("files"));
 app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(cookieParser(process.env.SESSION_SECRET))
 var sessionMiddleware =require('./middleware/session.middleware')
 app.use(sessionMiddleware);

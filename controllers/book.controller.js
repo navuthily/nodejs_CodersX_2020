@@ -30,19 +30,17 @@ const getBook = function (req, res) {
     id: req.signedCookies.userId
   }).value();
   var sessions = db.get("sessions").value();
-  var sum = 0;
-  if (sessions.cart) {
-    console.log(sessions[sessions.length - 1])
-    var a = sessions[sessions.length - 1];
-    var y = Object.values(a.cart);
-    for (let i = 0; i < y.length; i++) {
-      sum += y[i];
+  var sum=0;
 
-    }
-    console.log(sum);
-  } else {
-    sum = 0;
+  console.log(sessions[sessions.length - 1])
+  var a = sessions[sessions.length - 1];
+  var y = Object.values(a.cart);
+  for (let i = 0; i < y.length; i++) {
+    sum += y[i];
+
   }
+
+  console.log(sum);
   res.render("books/index", {
     books: books.value().slice(start, end),
     user: user,
@@ -85,7 +83,7 @@ const postCreate = async function (req, res) {
     title: req.body.title,
     description: req.body.description,
     cover: path,
-    price:req.body.price
+    price: req.body.price
   }).write();
   if (req.file) {
     fs.unlinkSync(req.file.path);

@@ -62,5 +62,45 @@
       "isComplete": false
     }
   ],
-  "sessions": []
+  "sessions": [
+    {
+      "id": "I8m6ZJVW-"
+    },
+    {
+      "id": "Ad3oaBnkL",
+      "cart": {
+        "oPv2qyF3y": 2,
+        "23T4zsdET": 3
+      }
+    },
+    {
+      "id": "sIp1iWAQJ",
+      "cart": {
+        "FnlkfNtXRq": 1,
+        "FnSfa12fNtXRq": 1,
+        "oPv2qyF3y": 13,
+        "23T4zsdET": 6,
+        "MisbqC7LB": 1,
+        "FnSffgNtkjhXRq": 1
+      }
+    },
+    {
+      "id": "Ls3aeCe6G",
+      "cart": {
+        "oPv2qyF3y": 5,
+        "23T4zsdET": 1
+      }
+    },
+    {
+      "id": "e8DDD-oiE"
+    },
+    {
+      "id": "1-q4h9lv2",
+      "cart": {
+        "pTNg7Rd42": 8,
+        "qB0IDpHoI": 4,
+        "TNd4EBWzP": 3
+      }
+    }
+  ]
 }
