@@ -1,7 +1,7 @@
 
 const express = require("express");
 const app = express();
-const port=3000;
+const port=3000 || process.env.PORT;
 require('dotenv').config();
 const cookieParser = require('cookie-parser')
 var routerCart = require('./routes/cart.route')
