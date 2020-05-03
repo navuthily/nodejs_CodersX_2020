@@ -31,7 +31,7 @@ const getUser = function (req, res) {
 const getSearch = function (req, res) {
   var q = req.query.q;
   var matched = users.value().filter(function (user) {
-    return user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
+    return user.username.toLowerCase().indexOf(q.toLowerCase()) !== -1;
   });
   var user = db.get('users').find({
     id: req.signedCookies.userId
@@ -88,13 +88,10 @@ const deleteUser = function (req, res) {
   return res.redirect("/user");
 };
 const editUser = async function (req, res) {
-  console.log(req.file);
-  console.log(req.file.path);
-  console.log(req.body.username);
-
+  // console.log(req.file);
+  // console.log(req.file.path);
+  // console.log(req.body.username);
 const file = req.file.path;
-
-// console.log('body', req.body)
 const path = await cloudinary.uploader
   .upload(file)
   .then(result => result.url)

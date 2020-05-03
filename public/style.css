@@ -12,11 +12,12 @@
   margin: 20px;
   background-color: #EAF2F8 ;
 }
+
 img{
   border-radius: 10px;
 }
 .card-body{
-  margin: 20px;
+  margin: 5px;
 }
 .fa-shopping-cart{
   color:#9bc17b;

@@ -1,59 +1,23 @@
 {
   "books": [
     {
-      "title": "closurec",
+      "id": "pTNg7Rd42",
+      "title": "Lối sống thực dụng",
       "description": "Fork from https://javascript.info/async-await#tasks",
-      "id": "oPv2qyF3y"
+      "cover": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588487071/dwgcg1kfdlka42hrirvg.png"
     },
     {
+      "id": "qB0IDpHoI",
       "title": "Học js",
       "description": "Fork from https://javascript.info/async-await#tasks",
-      "id": "23T4zsdET"
+      "cover": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588487379/mmchistotkjiqlt78pbh.png"
     },
     {
-      "title": "bin dat",
-      "description": "Fork from https://javascript.info/async-await",
-      "id": "MisbqC7LB"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnSfaffdNtXRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnSffgNtkjhXRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnSfafmnsdNtXRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnSfa12fNtXRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnlkfNtXRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnlkfNtXlkRq"
-    },
-    {
-      "title": "Accountant II",
-      "description": "Extraoc musc inj repair",
-      "id": "FnlkfNnbRjhq"
-    },
-    {
-      "title": "Học js new",
-      "description": "Fork from https://javascript.info/async-await so okee",
-      "id": "m1JjkYj6c"
+      "id": "TNd4EBWzP",
+      "title": "Học js",
+      "description": "Fork from https://javascript.info/async-await#tasks",
+      "cover": "http://res.cloudinary.com/danang-university-of-economic/image/upload/v1588487414/ua3kbo9jdwwzmma1opyu.png",
+      "price": "12000"
     }
   ],
   "users": [
@@ -75,115 +39,8 @@
       "wrongLoginCount": 0
     }
   ],
-  "transactions": [
-    {
-      "id": "M4sVO6XhQ",
-      "userId": "cPPtNDhMU",
-      "bookId": "oPv2qyF3y",
-      "isComplete": false
-    },
-    {
-      "id": "9vGBH6pdO",
-      "userId": "cPPtNDhMU",
-      "bookId": "oPv2qyF3y",
-      "isComplete": false
-    }
-  ],
+  "transactions": [],
   "sessions": [
-    {
-      "id": "I8m6ZJVW-"
-    },
-    {
-      "id": "Ad3oaBnkL",
-      "cart": {
-        "oPv2qyF3y": 2,
-        "23T4zsdET": 3
-      }
-    },
-    {
-      "id": "sIp1iWAQJ",
-      "cart": {
-        "FnlkfNtXRq": 1,
-        "FnSfa12fNtXRq": 1,
-        "oPv2qyF3y": 13,
-        "23T4zsdET": 6,
-        "MisbqC7LB": 1,
-        "FnSffgNtkjhXRq": 1
-      }
-    },
-    {
-      "id": "Ls3aeCe6G",
-      "cart": {
-        "oPv2qyF3y": 5,
-        "23T4zsdET": 1
-      }
-    },
-    {
-      "id": "e8DDD-oiE"
-    },
-    {
-      "id": "Ge18zAavV"
-    },
-    {
-      "id": "4xen2E7Yp"
-    },
-    {
-      "id": "YftCmL5Pj"
-    },
-    {
-      "id": "fUZEVIsi5"
-    },
-    {
-      "id": "ftnj_rq69"
-    },
-    {
-      "id": "hlHlm8QnA"
-    },
-    {
-      "id": "BhlXar1j88"
-    },
-    {
-      "id": "3nbbFe_zu"
-    },
-    {
-      "id": "-fm94_e9t"
-    },
-    {
-      "id": "tQ6AcPnAB"
-    },
-    {
-      "id": "B-_rIQTrN"
-    },
-    {
-      "id": "ImzzWqjT4"
-    },
-    {
-      "id": "9W1St7N6c"
-    },
-    {
-      "id": "TTewjihw5Z"
-    },
-    {
-      "id": "7WQTyRGbPw"
-    },
-    {
-      "id": "qoReB3_JP7"
-    },
-    {
-      "id": "U1f0L4Zt3E"
-    },
-    {
-      "id": "YZZyT5fo8"
-    },
-    {
-      "id": "W4ZK8LME4"
-    },
-    {
-      "id": "ptRnE8WJZ"
-    },
-    {
-      "id": "VSXG9eZrtU"
-    },
     {
       "id": "QxcOH-dLR_"
     }

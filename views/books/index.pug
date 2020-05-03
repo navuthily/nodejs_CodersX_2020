@@ -9,12 +9,13 @@ block cdn-bootstrap
    .container.nana
      h3.panel-title  List books
      each book in books 
-      .card(style='width: 18rem;')
-       img.card-img-top(alt='Card image cap', src='http://t0.gstatic.com/images?q=tbn:ANd9GcSBKMPzDVbtF5CbW9hO2myo0Z_RegBgZ9CGh9F04QLGhtyDZgGL3HdSs9VVIXNVvftmbvC5SkuNCs6GxRpeLrM', height='200px', width='150px')
+      .card(style='width: 15rem;')
+       img.card-img-top(alt='Card image cap',  src=`${book.cover}`, height='150px')
        .card-body
-        h5.card-title  Name :
+        h6.card-title  Tên sách :
          span= book.title
-        p.card-text  Price : 
+        p.card-text  Giá : 
+         span= book.price
         a.btn.btn-primary(href=`/book/view/${book.id}`) View more
         a(href='/cart/add/' + book.id) Thuê
 

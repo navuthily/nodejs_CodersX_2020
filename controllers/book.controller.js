@@ -2,6 +2,14 @@ const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const adapter = new FileSync("db.json");
 const db = low(adapter);
+const fs = require("fs");
+var cloudinary = require('cloudinary').v2
+require('dotenv').config();
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
 // Set some defaults
 db.defaults({
   books: []
@@ -29,12 +37,11 @@ const getBook = function (req, res) {
     var y = Object.values(a.cart);
     for (let i = 0; i < y.length; i++) {
       sum += y[i];
-     
+
     }
     console.log(sum);
-  }
-  else{
-    sum =0;
+  } else {
+    sum = 0;
   }
   res.render("books/index", {
     books: books.value().slice(start, end),
@@ -64,9 +71,25 @@ const getCreate = function (req, res) {
     user
   });
 };
-const postCreate = function (req, res) {
+const postCreate = async function (req, res) {
   req.body.id = shortid.generate();
-  books.push(req.body).write();
+  const file = req.file.path;
+  console.log(file);
+  const path = await cloudinary.uploader
+    .upload(file)
+    .then(result => result.url)
+    .catch(error => console.log("erro:::>", error));
+
+  books.push({
+    id: req.body.id,
+    title: req.body.title,
+    description: req.body.description,
+    cover: path,
+    price:req.body.price
+  }).write();
+  if (req.file) {
+    fs.unlinkSync(req.file.path);
+  }
   return res.redirect("/book");
 };
 const viewDetailBook = function (req, res) {

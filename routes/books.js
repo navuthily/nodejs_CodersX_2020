@@ -9,10 +9,13 @@ const{
   deleteBook,
   editBook
 }=require('../controllers/book.controller')
+const {
+  uploadMulter,
+} = require('../models/multer');
 router.get("/",getBook);
 router.get("/search", getSearch);
 router.get("/create", getCreate);
-router.post("/create", postCreate);
+router.post("/create", uploadMulter.single('cover'), postCreate);
 router.get("/view/:id", viewDetailBook);
 router.delete("/delete/:id", deleteBook);
 router.put('/edit/:id', editBook)
